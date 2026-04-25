@@ -65,7 +65,7 @@ export default function Contact({ isActive }) {
         <div className="social-links">
           <Magnetic><a href="https://www.linkedin.com/in/s%C6%A1n-b%C3%B9i-tu%E1%BA%A5n-a94b23405/" target="_blank" rel="noreferrer" className="social-link" title="LinkedIn"><FaLinkedinIn /></a></Magnetic>
           <Magnetic><a href="https://github.com/tuanson1985" target="_blank" rel="noreferrer" className="social-link" title="GitHub"><FaGithub /></a></Magnetic>
-          <Magnetic><a href="https://www.facebook.com/jirim1621" target="_blank" rel="noreferrer" className="social-link" title="Facebook"><FaFacebookF /></a></Magnetic>
+          <Magnetic><a href="https://www.facebook.com/BeoTronXinh/" target="_blank" rel="noreferrer" className="social-link" title="Facebook"><FaFacebookF /></a></Magnetic>
           <Magnetic><a href="https://zalo.me/0906240410" target="_blank" rel="noreferrer" className="social-link" title="Zalo"><ZaloIcon /></a></Magnetic>
         </div>
       </motion.div>
