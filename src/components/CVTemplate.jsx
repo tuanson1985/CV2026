@@ -136,7 +136,7 @@ const CVTemplate = forwardRef((_props, ref) => {
       }}
     >
       {/* ═══ PAGE 1 ══════════════════════════════════════════════════════════ */}
-      <div style={{ width: 794, minHeight: 1123, boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ width: 794, boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
 
         {/* ── HEADER ── */}
         <div style={{
@@ -173,7 +173,7 @@ const CVTemplate = forwardRef((_props, ref) => {
               background: `linear-gradient(135deg, ${C.brand1}, ${C.brand3})`,
             }} />
             <img
-              src={`${BASE}avatar.jpg`}
+              src={`${BASE}sonbt.jpg`}
               alt="Avatar"
               crossOrigin="anonymous"
               style={{
@@ -278,6 +278,8 @@ const CVTemplate = forwardRef((_props, ref) => {
             <SkillGroup title="Core Stack" tags={skills.core} accent />
             <SkillGroup title="Architecture & Testing" tags={skills.architecture} />
             <SkillGroup title="DevOps & Tools" tags={skills.devops} />
+            <SkillGroup title="Mobile App" tags={skills.mobile} />
+            <SkillGroup title="Automation & Tool" tags={skills.automation} />
           </div>
         </div>
       </div>

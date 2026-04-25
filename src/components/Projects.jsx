@@ -18,23 +18,22 @@ const cardVariants = {
 
 const projects = [
   {
-    icon: '🔑',
-    name: 'Ritokey',
-    desc: 'Nền tảng mua bán tài khoản và dịch vụ kỹ thuật số (YouTube, Cursor, ...). Hỗ trợ giao dịch tự động, quản lý đơn hàng và hệ thống kho hàng thông minh.',
-    tags: ['Laravel', 'MySQL', 'Redis Queue', 'Tailwind', 'JQuery', 'Ajax'],
-    demo: 'https://ritokey.com',
+    icon: '🏗️',
+    name: 'BD10F – Khotaptrung Marketplace',
+    desc: 'Marketplace nội bộ quy mô lớn, kết nối 6 sàn quốc tế (G2G, Eldorado, PlayerOk...). Auto-crawl giá, quản lý gift card & nick/acc, đa ví điện tử, JWT API multi-guard.',
+    tags: ['Laravel', 'MySQL', 'Redis', 'JWT', 'TypeScript', 'jQuery', 'Ajax', 'HTML/CSS'],
   },
   {
-    icon: '💬',
-    name: 'JiRim Chat System',
-    desc: 'Hệ thống chat real-time đầy đủ tính năng: nhắn tin 1-1 & nhóm, gọi video P2P (WebRTC), emoji reactions, pin tin nhắn, presence tracking và E2E testing với Playwright.',
-    tags: ['Laravel', 'Vue 3', 'WebRTC', 'WebSocket', 'Redis', 'Playwright', 'Unit Test'],
+    icon: '🎮',
+    name: 'Hub Daily – Game Service Marketplace',
+    desc: 'Nền tảng game multi-shop: nạp thẻ, nick/acc, Robux B2B, tool game (NRO, BloxFruits...). Bot Roblox proxy rotation, đa cổng thanh toán, báo cáo Telegram tự động.',
+    tags: ['Laravel', 'MySQL', 'Redis', 'JWT', 'S3', 'Telegram API', 'jQuery', 'Ajax'],
   },
   {
-    icon: '🏠',
-    name: 'Hub HQ',
-    desc: 'Hệ thống Hub tổng hợp, kết nối và quản lý các dịch vụ nội bộ của HQ Group. Cung cấp giao diện trung tâm để điều hướng và vận hành các hệ thống con.',
-    tags: ['Laravel', 'HTML/CSS', 'jQuery', 'Ajax', 'MySQL'],
+    icon: '🏬',
+    name: 'Hub HQ – Game eCommerce Platform',
+    desc: 'Sàn game Việt Nam: nick/acc, gift card SeaGM tự động, nạp game. B2B API merchant, ví điện tử, phê duyệt lô hàng đa cấp, RBAC + Sentry monitoring.',
+    tags: ['Laravel', 'MySQL', 'Redis', 'JWT', 'Spatie RBAC', 'Sentry', 'jQuery', 'Ajax'],
   },
   {
     icon: '🏪',
@@ -44,10 +43,10 @@ const projects = [
     demo: 'https://shoprito.com',
   },
   {
-    icon: '💳',
-    name: 'HPay',
-    desc: 'Hệ thống thanh toán nội bộ của HQ Group, xử lý giao dịch nạp tiền, rút tiền và quản lý ví người dùng một cách an toàn và tự động.',
-    tags: ['Laravel', 'MySQL', 'REST API', 'JavaScript', 'jQuery'],
+    icon: '💜',
+    name: 'PassionZone',
+    desc: 'Nền tảng kết nối người chơi & idol gaming: đặt lịch chơi cùng, chat real-time, tặng quà và theo dõi idol yêu thích. Idol quản lý lịch, đơn booking và thu nhập qua app Flutter riêng.',
+    tags: ['Laravel', 'Socket.IO', 'Flutter', 'MySQL', 'JavaScript', 'jQuery'],
   },
   {
     icon: '📊',
@@ -56,11 +55,11 @@ const projects = [
     tags: ['Laravel', 'MySQL', 'JavaScript', 'jQuery', 'Ajax'],
   },
   {
-    icon: '🛒',
-    name: 'Raonhanh365',
-    desc: 'Nền tảng thương mại điện tử dạng rao vặt đa ngành hàng (xe cộ, đồ điện tử, đồ dùng cá nhân...). Hỗ trợ tìm kiếm, lọc, trò chuyện trực tiếp giữa người mua và người bán.',
-    tags: ['Laravel', 'MySQL', 'HTML/CSS', 'JavaScript', 'jQuery', 'Ajax'],
-    demo: 'https://raovat6s.com',
+    icon: '🔑',
+    name: 'Ritokey',
+    desc: 'Nền tảng mua bán tài khoản và dịch vụ kỹ thuật số (YouTube, Cursor, ...). Hỗ trợ giao dịch tự động, quản lý đơn hàng và hệ thống kho hàng thông minh.',
+    tags: ['Laravel', 'MySQL', 'Redis Queue', 'Tailwind', 'JQuery', 'Ajax'],
+    demo: 'https://ritokey.com',
   },
 ];
 

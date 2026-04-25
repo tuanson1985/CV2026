@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { FaCode, FaLayerGroup, FaTools } from 'react-icons/fa';
+import { FaCode, FaLayerGroup, FaTools, FaMobileAlt, FaRobot } from 'react-icons/fa';
 import { motion, useInView } from 'framer-motion';
 
 // Hiệu ứng cho từng card: slide up + fade in
@@ -37,8 +37,20 @@ export default function Skills({ isActive, isMobile }) {
     {
       icon: <FaTools />,
       title: 'DevOps & Exploring',
-      tags: ['Linux Server', 'CI/CD Pipelines', 'Docker', 'Git / GitHub', 'WebRTC', 'Golang', 'React', 'Figma', 'WebSocket'],
+      tags: ['Linux Server', 'CI/CD Pipelines', 'Docker', 'Git / GitHub', 'WebRTC', 'React', 'Figma', 'WebSocket'],
       delay: 0.07,
+    },
+    {
+      icon: <FaMobileAlt />,
+      title: 'Mobile Development',
+      tags: ['Flutter', 'Dart', 'Cross-platform App'],
+      delay: 0.08,
+    },
+    {
+      icon: <FaRobot />,
+      title: 'Automation & Tooling',
+      tags: ['TypeScript', 'Bot / Automation', 'Macro Simulation'],
+      delay: 0.08,
     },
   ];
 

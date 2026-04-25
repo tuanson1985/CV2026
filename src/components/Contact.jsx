@@ -47,26 +47,26 @@ export default function Contact({ isActive }) {
           Nếu bạn là nhà tuyển dụng hoặc có cơ hội muốn chia sẻ, đừng ngần ngại liên hệ — tôi luôn sẵn sàng!
         </p>
         <div className="contact-cards">
-          <a href="tel:0522901602" className="contact-card">
+          <a href="tel:0906240410" className="contact-card">
             <div className="contact-icon"><FaPhone /></div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
               <div className="contact-label">Điện thoại</div>
-              <div className="contact-value">0522 901 602</div>
+              <div className="contact-value">0906 240 410</div>
             </div>
           </a>
-          <a href="mailto:dtp1621@gmail.com" className="contact-card">
+          <a href="mailto:sonbt@hqplay.vn" className="contact-card">
             <div className="contact-icon"><FaEnvelope /></div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
               <div className="contact-label">Email</div>
-              <div className="contact-value">dtp1621@gmail.com</div>
+              <div className="contact-value">sonbt@hqplay.vn</div>
             </div>
           </a>
         </div>
         <div className="social-links">
-          <Magnetic><a href="https://www.linkedin.com/in/ph%C6%B0%C6%A1ng-%C4%91%E1%BB%97-7471162b6/" target="_blank" rel="noreferrer" className="social-link" title="LinkedIn"><FaLinkedinIn /></a></Magnetic>
-          <Magnetic><a href="https://github.com/dophuong1621" target="_blank" rel="noreferrer" className="social-link" title="GitHub"><FaGithub /></a></Magnetic>
+          <Magnetic><a href="https://www.linkedin.com/in/s%C6%A1n-b%C3%B9i-tu%E1%BA%A5n-a94b23405/" target="_blank" rel="noreferrer" className="social-link" title="LinkedIn"><FaLinkedinIn /></a></Magnetic>
+          <Magnetic><a href="https://github.com/tuanson1985" target="_blank" rel="noreferrer" className="social-link" title="GitHub"><FaGithub /></a></Magnetic>
           <Magnetic><a href="https://www.facebook.com/jirim1621" target="_blank" rel="noreferrer" className="social-link" title="Facebook"><FaFacebookF /></a></Magnetic>
-          <Magnetic><a href="https://zalo.me/0522901602" target="_blank" rel="noreferrer" className="social-link" title="Zalo"><ZaloIcon /></a></Magnetic>
+          <Magnetic><a href="https://zalo.me/0906240410" target="_blank" rel="noreferrer" className="social-link" title="Zalo"><ZaloIcon /></a></Magnetic>
         </div>
       </motion.div>
     </section>

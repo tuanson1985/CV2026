@@ -69,7 +69,7 @@ export default function Navbar({ swiper, isMobile }) {
         animate={{ y: 0 }}
         transition={{ type: 'spring', stiffness: 120, damping: 20 }}
       >
-        <div className="logo">ĐTP.</div>
+        <div className="logo">BTS.</div>
 
         {/* Desktop links */}
         <ul className="nav-links">

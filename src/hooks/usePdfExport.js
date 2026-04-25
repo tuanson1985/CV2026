@@ -122,7 +122,7 @@ export function usePdfExport(cvRef, isOpen) {
         pageNum++;
       }
 
-      pdf.save('DoThePhuong_CV.pdf');
+      pdf.save('BuiTuanSon_CV.pdf');
       setStatus('✅ Tải xuống thành công!');
       setTimeout(() => setStatus(''), 2000);
 

@@ -2,51 +2,29 @@
 // Mọi thay đổi ở đây sẽ tự động phản ánh cả lên Portfolio lẫn file CV tải về.
 
 export const userInfo = {
-  name: 'Đỗ Thế Phương',
+  name: 'Bùi Tuấn Sơn',
   title: 'Full-Stack Developer (PHP / Laravel)',
-  dob: '16/02/2001',
-  email: 'phuongdt1621@gmail.com',
-  phone: '0522901602',
-  address: 'Phố Vọng, Hoàng Mai, Hà Nội',
-  github: 'github.com/dophuong1621',
+  dob: '04/10/1985',
+  email: 'sonbt@hqplay.vn',
+  phone: '0906240410',
+  address: 'C4 Nam Đồng, Đống Đa, Hà Nội',
+  github: 'github.com/tuanson1985',
   website: 'https://dophuong1621.github.io/portfolio',
   summary:
-    'Là một chuyên gia trong việc xây dựng và tối ưu hoá những hệ thống đa nền tảng, giải quyết những bài toán kỹ thuật phức tạp của doanh nghiệp.',
+    'Full-Stack Developer với 5+ năm kinh nghiệm xây dựng và vận hành hệ thống web quy mô lớn — từ backend API, hạ tầng server đến giao diện người dùng. Có khả năng phát triển app mobile cross-platform (Flutter) và xây dựng tool tự động hoá thao tác nghiệp vụ (TypeScript). Đam mê tối ưu hiệu năng, thiết kế kiến trúc hệ thống linh hoạt và giải quyết các bài toán kỹ thuật phức tạp của doanh nghiệp.',
 };
 
 export const education = [
   {
-    period: '2019 – 2023',
-    school: 'Học viện CNTT Bách Khoa - Hà Nội',
-    degree: 'Kỹ sư Công nghệ thông tin',
+    period: '2004 – 2011',
+    school: 'Đại Học Xây Dựng Hà Nội',
+    degree: 'Kỹ sư cơ giới hóa xây dựng',
   },
 ];
 
 export const experiences = [
   {
-    period: '03/2022 — 06/2022',
-    role: 'Web Developer Intern',
-    company: 'Công ty timviec365',
-    desc: 'Thực tập phát triển web tại timviec365 — nền tảng tuyển dụng trực tuyến hàng đầu Việt Nam.',
-    bullets: [
-      'Hỗ trợ phát triển và bảo trì giao diện người dùng',
-      'Làm quen với quy trình phát triển phần mềm thực tế',
-      'Công nghệ: PHP, Codeigniter, HTML/CSS, JavaScript, jQuery, MySQL',
-    ],
-  },
-  {
-    period: '10/2022 — 12/2022',
-    role: 'Web Developer Intern',
-    company: 'Công ty Tigren',
-    desc: 'Thực tập phát triển web tại Tigren, học nền tảng Magento và làm việc trực tiếp trên môi trường Linux.',
-    bullets: [
-      'Học và thực hành phát triển với Magento (nền tảng eCommerce)',
-      'Làm việc trên hệ điều hành Linux trong môi trường thực tế',
-      'Tìm hiểu quy trình phát triển thương mại điện tử doanh nghiệp',
-    ],
-  },
-  {
-    period: '02/2023 — 05/2026',
+    period: '01/06/2021 — Nay',
     role: 'Web Developer',
     company: 'HQ Group',
     desc: 'Tham gia phát triển và vận hành các hệ thống web nội bộ của HQ Group, bao gồm: nền tảng thương mại điện tử, hệ thống quản lý kho thành viên, hệ thống thanh toán (nạp/rút tiền, quản lý ví, đối soát giao dịch) và các giải pháp bảo mật hạ tầng như chống DDoS, chống spam, rate limiting.',
@@ -81,34 +59,48 @@ export const projects = [
     tech: 'PHP | Laravel | MySQL | Redis Queue | Tailwind | JavaScript | jQuery | Ajax',
   },
   {
-    name: 'Hub HQ',
-    desc: 'Hệ thống kho tập trung quản lý tài khoản, mật khẩu và gift card. Cho phép nhập kho hàng loạt, phân loại theo danh mục và phân phối xuống các kho con (shop thành viên) để bán nick, gift card cho người dùng cuối.',
+    name: 'PassionZone',
+    desc: 'Nền tảng kết nối người chơi và idol gaming: đặt lịch chơi cùng, chat real-time, tặng quà ảo và theo dõi idol yêu thích. Idol quản lý lịch, đơn booking và thu nhập qua app Flutter riêng.',
     bullets: [
-      'Xây dựng module nhập kho hàng loạt và quản lý tài khoản/gift card theo danh mục',
-      'Thiết kế cơ chế phân phối tự động từ kho trung tâm xuống các kho con theo cấu hình',
-      'Xây dựng dashboard theo dõi tồn kho, lịch sử phân phối và báo cáo theo thời gian thực',
+      'Xây dựng hệ thống booking lịch chơi theo slot thời gian, quản lý trạng thái đơn real-time',
+      'Tích hợp Socket.IO cho chat real-time 1-1 giữa user và idol, hỗ trợ tặng quà ảo trong phòng',
+      'Phát triển app Flutter dành riêng cho idol: nhận đơn, quản lý lịch, theo dõi doanh thu',
+      'Xây dựng hệ thống ví nội bộ, thanh toán booking và phân chia hoa hồng tự động',
     ],
-    tech: 'PHP | Laravel | MySQL | Redis | HTML/CSS | JavaScript | jQuery | Ajax',
+    tech: 'PHP | Laravel | MySQL | Socket.IO | Flutter | Dart | JavaScript | jQuery | Ajax',
   },
   {
-    name: 'HPay – Hệ thống thanh toán nội bộ',
-    desc: 'Hệ thống thanh toán nội bộ của HQ Group, xử lý toàn bộ vòng đời giao dịch: nạp tiền, rút tiền, quản lý ví người dùng và đối soát tài chính. Đảm bảo tính nhất quán dữ liệu và an toàn giao dịch trong môi trường đa hệ thống.',
+    name: 'Hub Daily – Game Service Marketplace',
+    desc: 'Nền tảng thương mại dịch vụ game multi-shop (multi-tenant) dành cho thị trường Việt Nam: nạp thẻ điện thoại, mua bán nick/acc game, giao dịch Robux B2B và tool game tự động. Hơn 100 controllers, ~100 models, tích hợp đa cổng thanh toán và Roblox bot.',
     bullets: [
-      'Phát triển API nạp/rút tiền, đồng bộ số dư ví theo thời gian thực',
-      'Tích hợp webhook xử lý callback từ cổng thanh toán bên thứ ba',
-      'Xây dựng module đối soát giao dịch và báo cáo tài chính tự động',
+      'Xây dựng hệ thống multi-tenant: mỗi shop có domain, cấu hình thanh toán và API key riêng',
+      'Phát triển Roblox bot (proxy rotation, multi-version) xử lý đơn Robux B2B tự động',
+      'Tích hợp đa cổng thanh toán (nạp thẻ, rút tiền ngân hàng, ví nội bộ) và S3 storage',
+      'Xây dựng hệ thống báo cáo tự động qua Telegram, export Excel và dashboard doanh thu',
     ],
-    tech: 'PHP | Laravel | MySQL | REST API | JavaScript | jQuery',
+    tech: 'PHP | Laravel | MySQL | Redis | JWT | S3 | Telegram API | JavaScript | jQuery | Ajax',
   },
   {
-    name: 'JiRim Chat System',
-    desc: 'Hệ thống chat nội bộ real-time đầy đủ tính năng: nhắn tin 1-1 & nhóm, gọi video P2P (WebRTC), emoji reactions, ghim tin nhắn, theo dõi trạng thái online (presence tracking). Được kiểm thử toàn diện với E2E testing và Unit Test.',
+    name: 'BD10F – Khotaptrung Marketplace',
+    desc: 'Hệ thống marketplace nội bộ quy mô lớn: quản lý gift card, nick/acc game, đơn hàng tự động & thủ công trên 6 sàn quốc tế (G2G, Eldorado, PlayerOk, ItemKu, GGsel, FunPay). Tích hợp ví điện tử, auto-crawl giá, nạp game tự động và hệ thống thanh toán đa cổng.',
     bullets: [
-      'Thiết kế kiến trúc WebSocket với Laravel Broadcasting + Redis Pub/Sub',
-      'Tích hợp WebRTC cho tính năng gọi video P2P không cần máy chủ trung gian',
-      'Viết bộ E2E test tự động bằng Playwright và Unit Test cho các module nghiệp vụ',
+      'Thiết kế & phát triển hệ thống quản lý đơn hàng tự động và thủ công trên 6 sàn quốc tế',
+      'Xây dựng module auto-crawl giá, định giá động và đồng bộ offer theo thời gian thực',
+      'Tích hợp đa ví điện tử (FunPay, RBX, ZeusX), cổng thanh toán và hệ thống đối soát',
+      'Phát triển REST API (JWT) phục vụ mobile/client, multi-guard auth (web/api/frontend)',
     ],
-    tech: 'PHP | Laravel | Vue 3 | WebRTC | WebSocket | Redis | Playwright | Unit Test',
+    tech: 'PHP | Laravel | MySQL | Redis | JWT | TypeScript | JavaScript | jQuery | Ajax',
+  },
+  {
+    name: 'Hub HQ – Game eCommerce Platform',
+    desc: 'Nền tảng thương mại điện tử game Việt Nam: bán nick/acc, gift card tích hợp SeaGM tự động, dịch vụ nạp game (NRO, Roblox, Ninja...). B2B API cho merchant, ví điện tử, phê duyệt lô hàng đa cấp, RBAC + 2FA và Sentry monitoring.',
+    bullets: [
+      'Tích hợp nhà cung cấp SeaGM tự động: mapping category, mua/bán gift card và retry logic Fibonacci',
+      'Xây dựng B2B REST API (JWT) cho merchant, hệ thống ví điện tử và transaction ledger',
+      'Thiết kế workflow phê duyệt lô hàng đa cấp (lead/CFO/CEO) và hoàn hàng đa bước',
+      'Tích hợp Sentry monitoring, RBAC (Spatie), scheduler tự động xác nhận & retry đơn lỗi',
+    ],
+    tech: 'PHP | Laravel | MySQL | Redis | JWT | Spatie RBAC | Sentry | JavaScript | jQuery | Ajax',
   },
 ];
 
@@ -116,12 +108,14 @@ export const skills = {
   core: ['PHP', 'Laravel', 'MySQL', 'Redis', 'Nginx', 'REST API', 'UX/UI'],
   architecture: ['System Design', 'API Specs', 'Performance Optimization', 'Playwright', 'Unit Test'],
   devops: ['Linux Server', 'CI/CD', 'Docker', 'Git / GitHub', 'WebRTC', 'Vue 3', 'React', 'WebSocket'],
+  mobile: ['Flutter', 'Dart', 'Cross-platform App'],
+  automation: ['TypeScript', 'Bot / Automation', 'Macro Simulation'],
 };
 
 export const activities = [
   { icon: '🏃', name: 'Chạy bộ',    desc: 'Tham gia đầy đủ các giải nội bộ, thành tích top finisher' },
-  { icon: '⚽', name: 'Bóng đá',    desc: 'Vô địch giải phong trào toàn công ty' },
-  { icon: '🏸', name: 'Pickleball', desc: '🏆 Vô địch đôi nam – Giải Ngày Hội HQ' },
+  { icon: '📚', name: 'Đọc sách',   desc: 'Yêu thích sách công nghệ, tâm lý học và phát triển bản thân' },
+
   { icon: '🏸', name: 'Cầu lông',   desc: 'Chơi thường xuyên, tham gia sân ngoại khoá' },
   { icon: '🤖', name: 'AI sáng tạo',desc: 'Tạo hình ảnh & âm nhạc bằng công nghệ AI' },
 ];

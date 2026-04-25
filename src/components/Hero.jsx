@@ -1,4 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
+import { userInfo } from '../data/cvData';
 import { FaFileAlt, FaPaperPlane } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
 import { motion, useReducedMotion } from 'framer-motion';
@@ -52,7 +53,7 @@ export default function Hero({ swiper, isActive }) {
                 visible: { y: 0, opacity: 1, transition: { duration: 0.8, ease: [0.33, 1, 0.68, 1] } }
               }}
             >
-              Đỗ Thế <span>Phương</span>
+              Bùi Tuấn <span>Sơn</span>
             </motion.h1>
           </div>
           <div className="hero-role" style={{ minHeight: '30px' }}>
@@ -71,9 +72,7 @@ export default function Hero({ swiper, isActive }) {
                 <span style={{ color: 'var(--muted)', fontWeight: 600 }}>Full-Stack Developer</span>
               )}
             </div>
-            <p className="hero-desc">
-              Là một Full Stack Developer đam mê công nghệ, tôi có thế mạnh trong việc thiết kế kiến trúc hệ thống linh hoạt và tối ưu hóa trải nghiệm người dùng. Mục tiêu của tôi là xây dựng các nền tảng chất lượng cao, hiệu năng vượt trội với hệ sinh thái đa dạng (Laravel, Vue 3, Tailwind, jQuery...) nhằm giải quyết các bài toán khó của doanh nghiệp.
-            </p>
+            <p className="hero-desc">{userInfo.summary}</p>
           <div className="hero-btns" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             {/* Fix E: Magnetic chỉ trên desktop — mobile không có chuột */}
             {isMobile ? (
@@ -113,7 +112,7 @@ export default function Hero({ swiper, isActive }) {
               onClick={() => swiper && swiper.slideTo(2)}
               title="Xem Kinh nghiệm"
             >
-              <b>3+</b> năm kinh nghiệm
+              <b>5+</b> năm kinh nghiệm
             </div>
             <div
               className="stat-chip stat-chip--link"
@@ -141,12 +140,12 @@ export default function Hero({ swiper, isActive }) {
             {/* Mobile ≤768px → ảnh nhỏ 22 KB (420px wide) */}
             <source
               media="(max-width: 768px)"
-              srcSet={`${import.meta.env.BASE_URL}avatar-mobile.jpg`}
+              srcSet={`${import.meta.env.BASE_URL}sonbt.jpg`}
             />
             {/* Desktop → ảnh gốc 44 KB */}
             <img
-              src={`${import.meta.env.BASE_URL}avatar.jpg`}
-              alt="Đỗ Thế Phương — PHP & Laravel Developer"
+              src={`${import.meta.env.BASE_URL}sonbt.jpg`}
+              alt="Bùi Tuấn Sơn — PHP & Laravel Developer"
               className="hero-avatar-img"
               fetchpriority="high"
               loading="eager"
