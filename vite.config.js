@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/CV2026/' : '/',
   plugins: [react()],
   build: {
     // ESNext → output nhỏ nhất, không polyfill cũ
