@@ -24,7 +24,11 @@ html, body, #root {
 }
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at center, transparent 50%, rgba(3,12,20,0.92) 100%),
+    radial-gradient(circle, rgba(14,165,233,0.18) 1px, transparent 1px);
+  background-size: cover, 28px 28px;
   color: var(--text);
 }
 
@@ -37,13 +41,25 @@ body {
 .blob {
   position: fixed;
   border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.18;
   pointer-events: none;
   z-index: 0;
 }
-.blob-1 { width: 600px; height: 600px; background: var(--brand-1); top: -200px; left: -200px; }
-.blob-2 { width: 500px; height: 500px; background: var(--brand-3); bottom: -150px; right: -150px; }
+.blob-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(14,165,233,0.35) 0%, transparent 70%);
+  filter: blur(110px);
+  opacity: 0.2;
+  top: -220px; left: -180px;
+}
+.blob-2 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(34,211,238,0.3) 0%, transparent 70%);
+  filter: blur(110px);
+  opacity: 0.16;
+  bottom: -160px; right: -160px;
+}
+.blob-3 { display: none; }
+.blob-4 { display: none; }
 
 /* â”€â”€â”€ NAVBAR â”€â”€â”€ */
 nav {
