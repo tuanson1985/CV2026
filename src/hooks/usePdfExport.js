@@ -45,7 +45,7 @@ export function usePdfExport(cvRef, isOpen) {
           useCORS:         true,
           allowTaint:      true,
           logging:         false,
-          backgroundColor: '#080812',
+          backgroundColor: '#030c14',
           windowWidth:     A4_W_PX,
         });
 
@@ -80,7 +80,7 @@ export function usePdfExport(cvRef, isOpen) {
           useCORS:         true,
           allowTaint:      true,
           logging:         false,
-          backgroundColor: '#080812',
+          backgroundColor: '#030c14',
           windowWidth:     A4_W_PX,
         });
       }
@@ -98,7 +98,7 @@ export function usePdfExport(cvRef, isOpen) {
         if (pageNum > 0) pdf.addPage();
 
         // ── Tô nền tối trước để phần rỗng cuối trang không bị trắng ──
-        pdf.setFillColor(8, 8, 18);   // #080812
+        pdf.setFillColor(3, 12, 20);   // #080812
         pdf.rect(0, 0, pdfW, pdfH, 'F');
 
         const srcYPx = (pageTop / totalHeightMm) * canvas.height;
@@ -111,7 +111,7 @@ export function usePdfExport(cvRef, isOpen) {
         slice.width  = canvas.width;
         slice.height = srcHPx;
         const ctx = slice.getContext('2d');
-        ctx.fillStyle = '#080812';
+        ctx.fillStyle = '#030c14';
         ctx.fillRect(0, 0, slice.width, slice.height);
         ctx.drawImage(canvas, 0, -srcYPx);
 

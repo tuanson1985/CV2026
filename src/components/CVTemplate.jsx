@@ -3,23 +3,23 @@ import { userInfo, education, experiences, projects, skills, activities } from '
 
 // ─── Design tokens khớp với Portfolio ──────────────────────────────────────────
 const C = {
-  bg:        '#080812',
-  bg2:       '#0f0f1a',
-  bg3:       '#151526',
-  brand1:    '#4f46e5',
-  brand2:    '#7c3aed',
-  brand3:    '#a855f7',
-  text:      '#f1f0ff',
-  muted:     '#9994cc',
-  border:    'rgba(255,255,255,0.08)',
-  glass:     'rgba(255,255,255,0.04)',
-  pink:      '#e879f9',
-  indigo:    '#818cf8',
+  bg:        '#030c14',
+  bg2:       '#050f1e',
+  bg3:       '#0c1a30',
+  brand1:    '#0ea5e9',
+  brand2:    '#0891b2',
+  brand3:    '#22d3ee',
+  text:      '#e0f4ff',
+  muted:     '#60a5c8',
+  border:    'rgba(14,165,233,0.12)',
+  glass:     'rgba(14,165,233,0.05)',
+  pink:      '#2dd4bf',
+  indigo:    '#38bdf8',
 };
 
 // ─── Gradient text effect (simulated cho html2canvas) ──────────────────────────
 // html2canvas không render CSS gradient text nên ta dùng màu đặc thay thế
-const GRAD_COLOR = '#818cf8'; // gần giống gradient indigo→purple
+const GRAD_COLOR = '#38bdf8'; // electric blue-cyan
 
 // ─── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -71,9 +71,9 @@ function Tag({ children, accent = false }) {
       borderRadius: 6,
       fontSize:     9.5,
       fontWeight:   600,
-      background:   accent ? `rgba(79,70,229,0.25)` : `rgba(168,85,247,0.12)`,
-      border:       `1px solid ${accent ? 'rgba(79,70,229,0.4)' : 'rgba(168,85,247,0.25)'}`,
-      color:        accent ? C.indigo : '#d8b4fe',
+      background:   accent ? `rgba(14,165,233,0.2)` : `rgba(34,211,238,0.1)`,
+      border:       `1px solid ${accent ? 'rgba(14,165,233,0.4)' : 'rgba(34,211,238,0.25)'}`,
+      color:        accent ? C.indigo : '#67e8f9',
       marginRight:  4,
       marginBottom: 4,
     }}>

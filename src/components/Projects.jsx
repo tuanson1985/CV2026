@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaGlobeAsia, FaRobot, FaStore, FaWarehouse, FaHeart, FaChartLine, FaKey } from 'react-icons/fa';
 import { motion, useInView } from 'framer-motion';
 import ScrollableGrid from './ScrollableGrid';
 
@@ -18,44 +18,51 @@ const cardVariants = {
 
 const projects = [
   {
-    icon: '🏗️',
+    Icon: FaGlobeAsia,
+    iconColor: '#22d3ee',
     name: 'BD10F – Khotaptrung Marketplace',
     desc: 'Marketplace nội bộ quy mô lớn, kết nối 6 sàn quốc tế (G2G, Eldorado, PlayerOk...). Auto-crawl giá, quản lý gift card & nick/acc, đa ví điện tử, JWT API multi-guard.',
     tags: ['Laravel', 'MySQL', 'Redis', 'JWT', 'TypeScript', 'jQuery', 'Ajax', 'HTML/CSS'],
   },
   {
-    icon: '🎮',
+    Icon: FaRobot,
+    iconColor: '#38bdf8',
     name: 'Hub Daily – Game Service Marketplace',
     desc: 'Nền tảng game multi-shop: nạp thẻ, nick/acc, Robux B2B, tool game (NRO, BloxFruits...). Bot Roblox proxy rotation, đa cổng thanh toán, báo cáo Telegram tự động.',
     tags: ['Laravel', 'MySQL', 'Redis', 'JWT', 'S3', 'Telegram API', 'jQuery', 'Ajax'],
   },
   {
-    icon: '🏬',
+    Icon: FaStore,
+    iconColor: '#2dd4bf',
     name: 'Hub HQ – Game eCommerce Platform',
     desc: 'Sàn game Việt Nam: nick/acc, gift card SeaGM tự động, nạp game. B2B API merchant, ví điện tử, phê duyệt lô hàng đa cấp, RBAC + Sentry monitoring.',
     tags: ['Laravel', 'MySQL', 'Redis', 'JWT', 'Spatie RBAC', 'Sentry', 'jQuery', 'Ajax'],
   },
   {
-    icon: '🏪',
+    Icon: FaWarehouse,
+    iconColor: '#0ea5e9',
     name: 'Kho tập trung – Kho thành viên',
     desc: 'Nền tảng thương mại điện tử chuyên cung cấp tài khoản game và dịch vụ số tự động. Tối ưu quy trình bảo mật, tốc độ giao dịch và quản lý kho thông minh.',
     tags: ['Laravel', 'MySQL', 'HTML/CSS', 'JavaScript', 'jQuery', 'Ajax'],
     demo: 'https://shoprito.com',
   },
   {
-    icon: '💜',
+    Icon: FaHeart,
+    iconColor: '#f472b6',
     name: 'PassionZone',
     desc: 'Nền tảng kết nối người chơi & idol gaming: đặt lịch chơi cùng, chat real-time, tặng quà và theo dõi idol yêu thích. Idol quản lý lịch, đơn booking và thu nhập qua app Flutter riêng.',
     tags: ['Laravel', 'Socket.IO', 'Flutter', 'MySQL', 'JavaScript', 'jQuery'],
   },
   {
-    icon: '📊',
+    Icon: FaChartLine,
+    iconColor: '#34d399',
     name: 'Báo cáo tài chính',
     desc: 'Hệ thống báo cáo tài chính nội bộ, tổng hợp dữ liệu giao dịch, xuất báo cáo theo kỳ và trực quan hóa số liệu cho ban quản lý.',
     tags: ['Laravel', 'MySQL', 'JavaScript', 'jQuery', 'Ajax'],
   },
   {
-    icon: '🔑',
+    Icon: FaKey,
+    iconColor: '#fbbf24',
     name: 'Ritokey',
     desc: 'Nền tảng mua bán tài khoản và dịch vụ kỹ thuật số (YouTube, Cursor, ...). Hỗ trợ giao dịch tự động, quản lý đơn hàng và hệ thống kho hàng thông minh.',
     tags: ['Laravel', 'MySQL', 'Redis Queue', 'Tailwind', 'JQuery', 'Ajax'],
@@ -92,7 +99,9 @@ export default function Projects({ isActive, isMobile }) {
             animate={showAnim ? 'visible' : 'hidden'}
             style={{ perspective: 1000 }}
           >
-            <div className="project-img">{proj.icon}</div>
+            <div className="project-img" style={{ color: proj.iconColor }}>
+                {proj.Icon && <proj.Icon />}
+              </div>
             <div className="project-body">
               <div className="project-name">{proj.name}</div>
               <p className="project-desc">{proj.desc}</p>

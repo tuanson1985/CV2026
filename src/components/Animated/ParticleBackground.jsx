@@ -67,6 +67,8 @@ export default function ParticleBackground() {
       <>
         <div className="blob blob-1" />
         <div className="blob blob-2" />
+        <div className="blob blob-3" />
+        <div className="blob blob-4" />
       </>
     );
   }
@@ -123,9 +125,9 @@ function ParticlesCanvas({ isMobile }) {
             },
           },
           particles: {
-            color: { value: "#818cf8" },
+            color: { value: "#38bdf8" },
             links: {
-              color: "#a855f7",
+              color: "#22d3ee",
               distance: isMobile ? 100 : 130,
               enable: true,
               opacity: 0.12,
